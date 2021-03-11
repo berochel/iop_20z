@@ -1,0 +1,12 @@
+Dobrze byłoby używać UseCase Diagrams zamiast Freeform Diagrams w RSAD. Przy tym drugim jest większe ryzyko użycia niewłaściwego elementu z przybornika, bo niemal wszystkie są dostępne.
+
+Asocjacja skierowana (w ogóle jakakolwiek) między dwoma UC nie ma sensu (tu: związek między UC4 i 5)
+Dlaczego logowanie "zależy od czasu"? A nawet jeśli - czy upływ czasu uruchamia logowanie? I raczej w przypadku powiązań z czasem asocjacja powinna być w jedną stronę skierowana.
+
+W krokach scenariuszy określenie "włączenie" jest mocno nadużywane - sugeruje, że chodzi o include, a tutaj chodzi o przypadki połączone generalizacją lub extendem. I ich scenariusze nie powinny być "włączane" do innych UC, tylko te inne UC powinny się do nich odwoływać. (np. w UC3 nie ma sensu pisać o włączaniu UC2)
+
+Scenariusze dość ogólne, kroki za mało konkretne - co po kolei robi system i użytkownik?
+
+Relacje między UC 15 i 19, UC 9 i 7 oraz 8 i 7 trochę przypominają modelowanie z perspektywy GUI
+
+2,2 pkt
